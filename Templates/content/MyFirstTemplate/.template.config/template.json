@@ -1,0 +1,26 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [ "Code", "Desktop" ],
+  "name": "MyFirstTemplate",
+  "identity": "ExampleTemplate.StringExtensions",
+  "shortName": "myfirsttemplate",
+  "sourceName": "StringExtensions",
+  "primaryOutputs": [
+    {
+      "path": "StringExtensions.cs"
+    }
+  ],
+  "defaultName": "StringExtensions",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "symbols": {
+    "DefaultNamespace": {
+      "type": "bind",
+      "binding": "msbuild:RootNamespace",
+      "replaces": "StringExtensionsNamespace"
+    }
+  }
+}

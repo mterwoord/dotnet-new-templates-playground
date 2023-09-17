@@ -1,0 +1,35 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Me",
+  "classifications": [ "Code", "Desktop" ],
+  "name": "TemplateWithParameter",
+  "identity": "ExampleTemplate.TemplateWithParameter",
+  "shortName": "templatewithparameter",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "sourceName": "MessageWriter",
+  "primaryOutputs": [
+    {
+      "path": "MessageWriter.cs"
+    }
+  ],
+  "defaultName": "MessageWriter",
+  "symbols": {
+    "DefaultNamespace": {
+      "type": "bind",
+      "binding": "msbuild:RootNamespace",
+      "replaces": "StringExtensionsNamespace"
+    },
+    "UseConsole": {
+      "type": "parameter",
+      "datatype": "text",
+      "defaultValue": "yes"
+    },
+    "ShouldUseController": {
+      "type": "computed",
+      "value": "(UseConsole == \"yes\")"
+    }
+  }
+}
