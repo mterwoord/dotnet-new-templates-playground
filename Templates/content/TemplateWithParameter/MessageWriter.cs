@@ -7,7 +7,7 @@ namespace StringExtensionsNamespace
     {
         public static void Execute()
         {
-#if (ShouldUseController)
+#if (ShouldUseConsole)
             Console.WriteLine("MESSAGE_TO_WRITE");
 #else
             Debug.WriteLine("MESSAGE_TO_WRITE");

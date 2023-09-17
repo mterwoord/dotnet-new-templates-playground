@@ -27,7 +27,7 @@
       "datatype": "text",
       "defaultValue": "yes"
     },
-    "ShouldUseController": {
+    "ShouldUseConsole": {
       "type": "computed",
       "value": "(UseConsole == \"yes\")"
     }
